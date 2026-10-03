@@ -1,0 +1,52 @@
+schema: reporogue/v1
+room:
+  mood: "creator-test-laboratory"
+  difficulty_modifier: 1.15
+  palette:
+    floor_a: "#0b2918"
+    floor_b: "#12361f"
+    accent: "#62f191"
+    feature: "#55b8ff"
+    trap: "#ef6f6c"
+    treasure: "#ffca58"
+  procedural:
+    bugs: true
+    traps: true
+    treasures: true
+features:
+  manifest_console:
+    label: "Manifest Console"
+    type: "machine"
+    description: "This feature exists because the repository author declared it in .reporogue/reporogue.yaml. It proves creator-authored room features are being consumed by the engine."
+    position: "northwest"
+    color: "#55b8ff"
+encounters:
+  schema_wraith:
+    type: "null_bug"
+    label: "Schema Wraith"
+    health: 58
+    speed: 54
+    damage: 13
+    color: "#d98cff"
+traps:
+  broken_pipeline:
+    label: "Broken Pipeline"
+    damage: 12
+    radius: 46
+    cooldown: 1300
+    position: "northeast"
+    color: "#ef6f6c"
+treasures:
+  golden_artifact:
+    label: "Golden Build Artifact"
+    kind: "power"
+    amount: 4
+    position: "southeast"
+    color: "#ffca58"
+lore:
+  summary: "This room is intentionally authored by the repository itself. The blue console, Schema Wraith, Broken Pipeline trap, Golden Build Artifact, palette, and affinities all originate in the RepoRogue manifest."
+character_influence:
+  testing: 5
+  github: 4
+  automation: 3
+  exploration: 2
